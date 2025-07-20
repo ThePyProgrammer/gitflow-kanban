@@ -1,8 +1,12 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "gitflow-kanban",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A modern kanban board interface for GitHub Projects with drag-and-drop functionality",
+  "keywords": ["github", "kanban", "project-management", "react", "typescript", "mui", "drag-and-drop"],
+  "author": "GitFlow Kanban Team",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
