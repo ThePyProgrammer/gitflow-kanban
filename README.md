@@ -34,6 +34,20 @@ A modern, intuitive kanban board interface for GitHub Projects built with React,
    - Open the application and click "Configure Repository"
    - Enter your repository details and token
 
+## 🌐 GitHub Pages Deployment
+
+This project includes automatic GitHub Pages deployment via GitHub Actions:
+
+1. **Enable GitHub Pages**: Go to Settings > Pages > Source: "GitHub Actions"
+2. **Push to main**: Automatic deployment triggers on every push to main branch
+3. **Access your site**: Available at `https://username.github.io/gitflow-kanban`
+
+The deployment workflow includes:
+- Dependency installation and caching
+- Code linting and testing
+- Production build generation
+- Automatic deployment to GitHub Pages
+
 ## 📚 Documentation
 
 - [Architecture Overview](./docs/architecture.md)

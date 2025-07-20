@@ -207,6 +207,46 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
+## 🚀 Deployment
+
+### GitHub Pages
+
+**Automatic Deployment with GitHub Actions** (Recommended):
+
+1. **Enable GitHub Pages**:
+   - Go to repository Settings > Pages
+   - Select "GitHub Actions" as the source
+
+2. **Push to main branch**:
+   - The GitHub Actions workflow will automatically build and deploy
+   - Your site will be available at `https://username.github.io/repository-name`
+
+**Manual Deployment** (Alternative):
+
+1. **Install gh-pages**:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. **Add deploy script to package.json**:
+   ```json
+   {
+     "scripts": {
+       "deploy": "npm run build && gh-pages -d dist"
+     }
+   }
+   ```
+
+3. **Deploy**:
+   ```bash
+   npm run deploy
+   ```
+
+4. **Configure GitHub Pages**:
+   - Go to repository Settings > Pages
+   - Select "Deploy from a branch"
+   - Choose `gh-pages` branch
+
 ## 🔧 Troubleshooting
 
 ### Common Issues
